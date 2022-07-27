@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>marina.com</title>
+    <style>
+        body{margin: auto;display: flex;align-items: center;justify-content: center;height: 100vh;background-color: beige;}
+        nav{position: fixed;top: 0px;left: 0px;right: 0px;height: 70px;width: 100%;display: flex;align-items: center;background-color: white;}
+        nav a{width: 100px;height: 30px;color: white;border-radius: 30px;transition: 0.5s;background-color:  rgb(55, 55, 238);border: none;font-size: 15px;display: flex;align-items: center;justify-content: center;text-decoration: none;}
+        nav a:hover{color: rgb(55, 55, 238);background-color: white;}
+        .rigth{display: flex;position: fixed;right: 30px;justify-content: space-around;width: 500px;}
+        .bot{display: flex;flex-direction: column;justify-content: center;padding-top: 0px;overflow: hidden;height: 0px;padding-left: 40px;padding-right: 40px;position: fixed;top: 70px;right: 0px;background-color: white;transition: 0.7s;width: 100px;}
+        .bot a{font-size: 15px;text-decoration: none;color: white;background-color:  rgb(55, 55, 238);display: flex;align-items: center;justify-content: center;width: 100px;height: 30px;border-radius: 30px;margin-bottom: 10px;transition: 0.5s;}
+        .bot a:hover{color:  rgb(55, 55, 238);background-color: white;}
+        nav img{width: 100px;height: 70px;}
+        .main{width: 500px;height: 500px;}
+        .main h1{color: black;font-size: 40px;}
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="header"></div>
+        <img src="https://img.freepik.com/free-vector/_139869-254.jpg?size=626&ext=jpg">
+        <h1>Education for Chefs</h1>
+        <div class="rigth">
+            <a href="marina.html">Home</a>
+            <a href="About.html">About</a>
+            <a onclick="f()">Contact</a>
+        </div>
+    </nav>
+<div class="bot" id="2">
+    <a href="https://www.facebook.com" target="_blank">Facebook</a>
+    <a href="https://www.Whatsapp.com" target="_blank">Whatsapp</a>
+    <a href="https://www.İnstagram.com" target="_blank">İnstagram</a>
+    <a href="https://www.Youtube.com" target="_blank">Youtube</a>
+</div>
+<div class="main">
+    <h1>What Are You Gonna do with us?</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora laudantium itaque consequatur? Reprehenderit reiciendis temporibus fugiat eaque facilis facere, porro ipsa modi quas commodi natus voluptate, eveniet voluptas debitis! Alias excepturi non accusamus sed, quisquam atque! A qui nostrum quisquam quas ducimus maiores iusto adipisci quos vel soluta voluptates porro enim veniam, distinctio ea eaque blanditiis. Molestiae quam numquam corporis voluptatum illum vero, non fugit soluta eum asperiores natus nihil, doloribus quis est corrupti in quos provident deleniti! Esse commodi aut sed dolorem quas in culpa amet, cupiditate voluptatem dolores suscipit quod dolore nihil quam incidunt unde deleniti totam atque ut reiciendis sit facilis quibusdam accusantium. Sapiente, voluptatem. Adipisci quisquam officiis esse sint nesciunt porro tenetur officia ipsam asperiores, enim quibusdam architecto eveniet maxime ullam, totam beatae itaque natus quod. Quae consequuntur eveniet necessitatibus totam voluptas, voluptatem placeat excepturi alias. Quibusdam voluptate, impedit sapiente quos veritatis nisi quae fugit voluptas tempore, aspernatur quis expedita! Quisquam aspernatur minus voluptatibus velit quo sunt porro? Officia reiciendis vel voluptas facilis, harum temporibus hic ipsa odit veritatis cum eius illo debitis voluptates obcaecati rem eaque velit libero, quis, deleniti consequatur atque nobis natus! Et aperiam explicabo, tenetur quod impedit numquam voluptates laboriosam odit sapiente!</p>
+</div>
+<script>
+    var counter=0;
+    var a=document.getElementById("2");
+    function f(){
+        counter+=1;
+        if(counter%2==0){
+        a.style.height="0px";
+    }
+    if(counter%2==1){
+        a.style.height="300px";
+    }
+    }
+    
+</script>
+</body>
+</html>
